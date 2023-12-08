@@ -1,4 +1,5 @@
 Feature: validate adminAreaDmo login
+  @Sanity @Regression
   Scenario: validate positive login credentials
     Given User launch chrome browser
     When User opens urls "https://admin-demo.nopcommerce.com/login"
@@ -10,7 +11,7 @@ Feature: validate adminAreaDmo login
     And close the browser
 
 
-
+@Regression
   Scenario Outline: login Data Driven
     Given User launch chrome browser
     When User opens urls "https://admin-demo.nopcommerce.com/login"
